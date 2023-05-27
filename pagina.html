@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Te amo amorzinho</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(#ff7f7f, #ff4c4c);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden; /* Evita rolagem horizontal */
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .heart {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff4c4c;
+      border-radius: 50%;
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.3);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-gap: 20px;
+      width: 80%;
+      margin: 0 auto; /* Centraliza horizontalmente */
+      margin-top: 50px; /* Adiciona espaçamento acima do catálogo */
+    }
+
+    .grid-item {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      padding-bottom: 150%;
+    }
+
+    .grid-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .grid-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .grid-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .grid-item .overlay h3 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .heart-icon {
+      position: fixed;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 100px;
+      color: red;
+      cursor: pointer;
+    }
+
+    /* Estilos para dispositivos móveis */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(1, 1fr); /* Uma coluna */
+        width: 90%; /* Aumenta um pouco a largura para melhorar o espaçamento */
+      }
+      .grid-item {
+        padding-bottom: 100%; /* Ajusta a proporção da altura das imagens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <div class="heart"></div>
+    <!-- Adicione mais corações aqui se desejar -->
+  </div>
+  <div class="grid">
+    <div class="grid-item">
+      <img src="IMG-20220702-WA0003.jpg" alt="Oi">
+      <div class="overlay">
+        <h3>Oi</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20220703-WA0000.jpg" alt="meu amorzinho">
+      <div class="overlay">
+        <h3>meu amorzinho</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20220703-WA0002.jpg" alt="eu queria te dizer">
+      <div class="overlay">
+        <h3>eu queria te dizer</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20220822-WA0002.jpg" alt="que eu amo muito você">
+      <div class="overlay">
+        <h3>que eu amo muito você</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20221217-WA0022.jpg" alt="Filme 5">
+      <div class="overlay">
+        <h3>E te pedir desculpas</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20230101-WA0011.jpg" alt="Filme 6">
+      <div class="overlay">
+        <h3>Você é tudo pra mim</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20230104-WA0003.jpg" alt="Filme 7">
+      <div class="overlay">
+        <h3>Não quero te perder nunca</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20230322-WA0000.jpg" alt="Filme 8">
+      <div class="overlay">
+        <h3>Você é a melhor coisa</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20230407-WA0014.jpg" alt="Filme 9">
+      <div class="overlay">
+        <h3>Que já me aconteceu</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20230407-WA0016.jpg" alt="Filme 10">
+      <div class="overlay">
+        <h3>Gatinha</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20230418-WA0024.jpg" alt="Filme 11">
+      <div class="overlay">
+        <h3>Linda</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20230430-WA0012.jpg" alt="Filme 12">
+      <div class="overlay">
+        <h3>Gostosa</h3>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="IMG-20230520-WA0001.jpg" alt="Filme 13">
+      <div class="overlay">
+        <h3>Eu te amo muito</h3>
+      </div>
+    </div>
+  </div>
+  <i class="fas fa-heart heart-icon"></i>
+
+  <!-- Adicione o link para o arquivo Font Awesome aqui -->
+</body>
+</html>
